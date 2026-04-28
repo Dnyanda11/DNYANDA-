@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dnyanda Girawale — Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== CURSOR ===== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ===== NAV ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">DG<span class="dot">.</span></div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#resume" class="nav-link">Resume</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting reveal">👋 Hello, I'm</p>
+      <h1 class="hero-name reveal">Dnyanda<br /><span class="highlight">Girawale</span></h1>
+      <div class="hero-role reveal">
+        <span class="role-text" id="typed-role"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc reveal">
+        Full Stack Developer crafting beautiful, scalable web experiences.<br />
+        CGPA 9.02 · Copyright Holder · State-Level Award Winner
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">9.02</span><span class="stat-label">CGPA</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">1</span><span class="stat-label">Copyright</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="avatar-card">
+        <div class="avatar-ring"></div>
+        <div class="avatar-inner">
+          <div class="avatar-initials">DG</div>
+        </div>
+        <div class="floating-tag tag-1"><i class="fab fa-react"></i> React.js</div>
+        <div class="floating-tag tag-2"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="floating-tag tag-3"><i class="fas fa-paint-brush"></i> UI/UX</div>
+        <div class="floating-tag tag-4"><i class="fas fa-database"></i> MongoDB</div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"><i class="fas fa-arrow-down"></i></div>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-blob"></div>
+          <div class="about-card-inner">
+            <div class="about-avatar">DG</div>
+            <div class="about-info-chips">
+              <span class="chip"><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</span>
+              <span class="chip"><i class="fas fa-graduation-cap"></i> BE Student (2027)</span>
+              <span class="chip"><i class="fas fa-star"></i> CGPA 9.02</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p class="about-lead">
+            I'm a results-driven <strong>Full Stack Developer</strong> and third-year engineering student at PCCOE, Pune.
+          </p>
+          <p class="about-body">
+            My passion lies at the intersection of clean code and beautiful design. I specialize in building responsive web applications using <strong>React.js, JavaScript, HTML/CSS</strong>, with a strong foundation in UI/UX principles.
+          </p>
+          <p class="about-body">
+            Beyond coding, I conduct user research, craft wireframes in Figma, and ensure my products are accessible and performant. I've secured a state-level award and even hold a Government of India copyright registration — proof that I take my work from idea to real-world impact.
+          </p>
+          <div class="about-values">
+            <div class="value-item"><div class="value-icon">🎯</div><div><strong>Problem Solver</strong><p>Analytical thinking meets clean execution</p></div></div>
+            <div class="value-item"><div class="value-icon">🎨</div><div><strong>Design-First</strong><p>UI/UX awareness in every component</p></div></div>
+            <div class="value-item"><div class="value-icon">📈</div><div><strong>Growth-Driven</strong><p>Continuous learner, always improving</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">My Skills</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+          <h3>Programming Languages</h3>
+          <div class="skill-items">
+            <div class="skill-pill" data-level="85"><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+            <div class="skill-pill" data-level="75"><span>C++</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Frontend Technologies</h3>
+          <div class="skill-items">
+            <div class="skill-pill"><span>React.js</span><div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div></div>
+            <div class="skill-pill"><span>HTML5</span><div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div></div>
+            <div class="skill-pill"><span>CSS3</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+            <div class="skill-pill"><span>Responsive Web Design</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon"><i class="fas fa-palette"></i></div>
+          <h3>UI/UX Design</h3>
+          <div class="skill-items">
+            <div class="skill-pill"><span>Figma</span><div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div></div>
+            <div class="skill-pill"><span>Wireframing</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+            <div class="skill-pill"><span>Prototyping</span><div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div></div>
+            <div class="skill-pill"><span>User Research</span><div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon"><i class="fas fa-database"></i></div>
+          <h3>Databases</h3>
+          <div class="skill-items">
+            <div class="skill-pill"><span>MySQL</span><div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div></div>
+            <div class="skill-pill"><span>MongoDB</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon"><i class="fas fa-tools"></i></div>
+          <h3>Tools & Platforms</h3>
+          <div class="skill-items">
+            <div class="skill-pill"><span>Git & GitHub</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+            <div class="skill-pill"><span>VS Code</span><div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div></div>
+            <div class="skill-pill"><span>Excel</span><div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-icon"><i class="fas fa-globe"></i></div>
+          <h3>Web Concepts</h3>
+          <div class="skill-items">
+            <div class="skill-pill"><span>REST APIs</span><div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div></div>
+            <div class="skill-pill"><span>Cross-Browser Compat.</span><div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div></div>
+            <div class="skill-pill"><span>Performance Optimization</span><div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tech-cloud reveal">
+        <span class="tech-tag">React.js</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">HTML5</span>
+        <span class="tech-tag">CSS3</span>
+        <span class="tech-tag">C++</span>
+        <span class="tech-tag">MySQL</span>
+        <span class="tech-tag">MongoDB</span>
+        <span class="tech-tag">Figma</span>
+        <span class="tech-tag">Git</span>
+        <span class="tech-tag">REST APIs</span>
+        <span class="tech-tag">GitHub</span>
+        <span class="tech-tag">VS Code</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">💰</div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Personal Finance Manager</h3>
+          <p class="project-subtitle">for Students</p>
+          <p class="project-desc">
+            A comprehensive web application for student expense tracking and budget management with secure data storage and an intuitive, responsive UI.
+          </p>
+          <ul class="project-highlights">
+            <li><i class="fas fa-check-circle"></i> Built with React.js, JavaScript, HTML & CSS</li>
+            <li><i class="fas fa-check-circle"></i> MySQL / MongoDB backend integration</li>
+            <li><i class="fas fa-check-circle"></i> Cross-browser compatible & performance optimized</li>
+            <li><i class="fas fa-check-circle"></i> Government of India Copyright Registration</li>
+          </ul>
+          <div class="project-tags">
+            <span>React.js</span><span>JavaScript</span><span>MySQL</span><span>MongoDB</span><span>CSS3</span>
+          </div>
+          <div class="project-badge"><i class="fas fa-award"></i> © Copyright Registered</div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon">💻</div>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Codemate</h3>
+          <p class="project-subtitle">Beginner-Friendly Coding Platform</p>
+          <p class="project-desc">
+            An interactive quiz and learning platform designed to make coding accessible for beginners, with custom UI layouts and seamless cross-device compatibility.
+          </p>
+          <ul class="project-highlights">
+            <li><i class="fas fa-check-circle"></i> User research & requirement analysis</li>
+            <li><i class="fas fa-check-circle"></i> Wireframes & prototypes in Figma</li>
+            <li><i class="fas fa-check-circle"></i> Interactive quizzes with React.js frontend</li>
+            <li><i class="fas fa-check-circle"></i> State-level project competition winner</li>
+          </ul>
+          <div class="project-tags">
+            <span>React.js</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Figma</span>
+          </div>
+          <div class="project-badge award"><i class="fas fa-trophy"></i> State-Level Consolation Prize</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Academic</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2023 – 2027</div>
+            <h3>Bachelor of Engineering</h3>
+            <p class="timeline-institute"><i class="fas fa-university"></i> Pimpri Chinchwad College of Engineering & Research, Pune</p>
+            <div class="timeline-grade"><i class="fas fa-star"></i> CGPA: <strong>9.02</strong></div>
+            <p class="timeline-note">Currently pursuing BE — consistently maintaining top academic performance.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">2021 – 2023</div>
+            <h3>Higher Secondary Certificate (HSC)</h3>
+            <p class="timeline-institute"><i class="fas fa-school"></i> Shree Baneshwar Junior College, Ahilyanagar</p>
+            <div class="timeline-grade"><i class="fas fa-star"></i> Score: <strong>72%</strong></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-year">SSC</div>
+            <h3>Secondary School Certificate (SSC)</h3>
+            <p class="timeline-institute"><i class="fas fa-school"></i> Ashokbhau Firodia English Medium School, Ahilyanagar</p>
+            <div class="timeline-grade"><i class="fas fa-star"></i> Score: <strong>88.40%</strong></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section class="section achievements" id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+      <div class="achievements-grid">
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🏆</div>
+          <h3>State-Level Consolation Prize</h3>
+          <p>Secured Consolation Prize at a State-Level Project Competition for the <strong>Codemate</strong> platform — a beginner-friendly coding learning tool.</p>
+          <div class="achievement-tag">Competition Award</div>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">©</div>
+          <h3>Government of India Copyright</h3>
+          <p>Filed and obtained official copyright registration from the <strong>Government of India</strong> for the Personal Finance Manager web application.</p>
+          <div class="achievement-tag">Intellectual Property</div>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🎓</div>
+          <h3>Academic Excellence — CGPA 9.02</h3>
+          <p>Maintaining a stellar <strong>CGPA of 9.02</strong> at Pimpri Chinchwad College of Engineering & Research, ranking among the top students.</p>
+          <div class="achievement-tag">Academic</div>
+        </div>
+
+        <div class="achievement-card reveal">
+          <div class="achievement-icon">🚀</div>
+          <h3>Full Stack Project Delivery</h3>
+          <p>Successfully designed, developed, and deployed multiple production-grade full stack web applications as a second-year engineering student.</p>
+          <div class="achievement-tag">Development</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESUME ===== -->
+  <section class="section resume-section" id="resume">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Download</span>
+        <h2 class="section-title">My Resume</h2>
+      </div>
+      <div class="resume-wrapper reveal">
+        <div class="resume-preview">
+          <div class="resume-mock">
+            <div class="rm-header">
+              <div class="rm-name"></div>
+              <div class="rm-contact">
+                <div class="rm-line short"></div>
+                <div class="rm-line short"></div>
+              </div>
+            </div>
+            <div class="rm-section">
+              <div class="rm-sec-title"></div>
+              <div class="rm-line"></div>
+              <div class="rm-line medium"></div>
+            </div>
+            <div class="rm-section">
+              <div class="rm-sec-title"></div>
+              <div class="rm-line"></div>
+              <div class="rm-line medium"></div>
+              <div class="rm-line short"></div>
+            </div>
+            <div class="rm-section">
+              <div class="rm-sec-title"></div>
+              <div class="rm-line medium"></div>
+              <div class="rm-line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="resume-info">
+          <h3>Dnyanda Girawale</h3>
+          <p>Full Stack Developer · UI/UX Designer</p>
+          <ul class="resume-highlights">
+            <li><i class="fas fa-check"></i> React.js, JavaScript, HTML/CSS</li>
+            <li><i class="fas fa-check"></i> MySQL & MongoDB</li>
+            <li><i class="fas fa-check"></i> Figma & UI/UX Design</li>
+            <li><i class="fas fa-check"></i> Copyright-registered project</li>
+            <li><i class="fas fa-check"></i> State-level award winner</li>
+          </ul>
+          <div class="resume-btns">
+            <a href="Updated_Resume.pdf" download class="btn btn-primary"><i class="fas fa-download"></i> Download PDF</a>
+            <a href="Updated_Resume.pdf" target="_blank" class="btn btn-outline"><i class="fas fa-eye"></i> View Online</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub">Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:dnyandagirawale1004@gmail.com">dnyandagirawale1004@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+919529473323">+91 9529473323</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <span>Pune, Maharashtra, India</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="mailto:dnyandagirawale1004@gmail.com" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="femail">Your Email</label>
+              <input type="email" id="femail" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fsubject">Subject</label>
+            <input type="text" id="fsubject" placeholder="Project Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="form-success">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">DG<span class="dot">.</span></div>
+        <p>Full Stack Developer · UI/UX Enthusiast · Pune, India</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Dnyanda Girawale · Crafted with <span class="heart">♥</span> and React.js</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
